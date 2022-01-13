@@ -1,0 +1,47 @@
+@keyframes fly {
+    0% {
+        left: 1400px;
+        transform: scale(0.3)
+    }
+
+    100% {
+        right: 1000px;
+        transform: translate(-750px, -300px);
+        transition: 0.1s;
+
+    }
+
+}
+
+.ranway {
+    width: 1600px;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.airolan {
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+    animation: fly 4s ease-in 3s infinite alternate;
+    animation-play-state: running;
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+    background-color: #000;
+}
+
+.nav a {
+    text-decoration: none;
+    margin: 20px 50px;
+    font-weight: 800;
+    color: #6b6565;
+    font-size: 24px;
+}
+
+.nav a:hover {
+    color: #FFF;
+}
